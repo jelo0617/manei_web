@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<title>Explorando CSS</title>
+  <link rel="stylesheet" href="../archivos/estilo.css">
+
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>PAGINA PRINCIPAL</title>
+
+
+  <script defer src="../archivos/javascript.js"></script>
+
+</head>
+
+<body>
+
+<div id="bloquesuperior">
+
+   <img class="banner" src="../imagenes/banner.jpeg" alt="banner">
+
+    <div id="letras">
+    <img src="../imagenes/logo.png" alt="logo">
+    </div>
+
+</div>
+ 
+<div id="menu">
+
+  <button onmouseover="colorBoton(this)" onmouseout="quitarColorBoton(this)" id ="binicio" onclick="enlace5()"> 
+  <img src="../imagenes/inicio.png" alt="icono de casa">
+  INICIO
+  </button>
+
+  <button onmouseover="colorBoton(this)" onmouseout="quitarColorBoton(this)" id="bproductos" onclick ="enlace7()">
+  <img src="../imagenes/productos.png" alt="icono de productos">
+  PRODUCTOS
+  </button> 
+       
+  <button onmouseover="colorBoton(this)" onmouseout="quitarColorBoton(this)" id="bdiseñadores" onclick ="enlace9()" >
+  <img src="../imagenes/dise.png" alt="icono de diseñadores">
+  DISEÑADORES
+  </button>
+
+  <button onmouseover="colorBoton(this)" onmouseout="quitarColorBoton(this)" id="bcontacto"onclick ="enlace8()" 
+  ><img src="../imagenes/contacto.png" alt="icono de contacto">
+  UBICACION Y CONTACTO
+  </button>
+	
+</div>
+
+
+  
+  <div class="ubicacion">
+
+    <div class="contenido-ubicacion">
+      <div class="como-llegar-video" >
+        <video controls preload="metadata">
+          <source src="../archivos/como_llegar.mp4" type="video/mp4">
+          Tu navegador no puede reproducir este video.
+        </video>
+      </div>
+
+      <div class="info">
+        <b>UBICACION Y CONTACTO</b>
+        <p><b>Direccion:</b> calle 69 #28c-97</p>
+        <p><b>Telefono/whatsapp:</b> 313-7561661</p>
+        <p><b>Horario:</b> viernes-sabado 6pm-10:30pm</p>
+        <p><b>Redes sociles:</b>Las delicias de manei  </p>
+      </div>
+    </div>
+
+    <div class="mapa">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.134551886643!2d-76.296817925027!3d3.5564599964177575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3a04a0280069d7%3A0x676a870cfda4eb34!2sCl%2069%20%23%2028C-97%2C%20Palmira%2C%20Valle%20del%20Cauca!5e0!3m2!1ses!2sco!4v1792916880107!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>    
+    </div>
+
+  </div>
+  
+<div id="barrabaja">
+  <p id="slogan">"CALIDAD A CADA BOCADO"</p>
+</div>
+
+<div id="bloqueinferior">
+    <img class="banner" src="../imagenes/baner2.png" alt="Banner">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Promociones | Manei</title>
+<link rel="stylesheet" href="../archivos/estilo.css">
+<script defer src="../archivos/javascript.js"></script>
+
+</head>
+
+<body>
+
+<div id="bloquesuperior">
+
+    <img class="banner" src="../imagenes/banner.jpeg" alt="banner">
+
+
+    <div class="letras">
+        <img src="../imagenes/logo.png" alt="logo">
+    </div>
+
+</div>
+ 
+<div id="menu">
+
+  <button onmouseover="colorBoton(this)" onmouseout="quitarColorBoton(this)" id ="binicio" onclick="enlace5()"> 
+  <img src="../imagenes/inicio.png" alt="icono de casa">
+  INICIO
+  </button>
+     
+  <button onmouseover="colorBoton(this)" onmouseout="quitarColorBoton(this)" type="button" onclick="enlace6()">
+  <img src="../imagenes/promo.png" alt="icono de promociones">
+  PROMOCIONES
+  </button> 
+
+  <button onmouseover="colorBoton(this)" onmouseout="quitarColorBoton(this)" id="bproductos" onclick ="enlace7()">
+  <img src="../imagenes/productos.png" alt="icono de productos">
+  PRODUCTOS
+  </button> 
+       
+  <button onmouseover="colorBoton(this)" onmouseout="quitarColorBoton(this)" id="bdiseñadores" onclick ="enlace9()" >
+  <img src="../imagenes/dise.png" alt="icono de diseñadores">
+  DISEÑADORES
+  </button>
+
+  <button onmouseover="colorBoton(this)" onmouseout="quitarColorBoton(this)" id="bcontacto"onclick ="enlace8()" 
+  ><img src="../imagenes/contacto.png" alt="icono de contacto">
+  UBICACION Y CONTACTO
+  </button>
+	
+</div>
+
+    <div id="texto1">
+      <p>
+      Aprovecha nuestras promociones 
+      </p> 
+
+  </div>
+
+
+  
+  <div class="galprom">
+    
+    <div id="promocion1" onclick="voltearTarjeta(this)" class="prom tarjeta-interactiva" role="button" tabindex="0" aria-pressed="false" aria-label="Promoción 1. Pulsa para ver precio e información">
+      <div class="tarjeta-cuerpo">
+        <div class="cara-tarjeta cara-frontal">
+          <div class="imagen-pendiente" aria-hidden="true"></div>
+          <p class="textopro">Promoción 1</p>
+        </div>
+        <div class="cara-tarjeta cara-trasera">
+          <h2>Promoción 1</h2>
+          <p>Precio: <div id="precio1" class="campo-pendiente" aria-label="por completar"></div></p>
+          <p>Información: <div id="informacion1" class="campo-pendiente" aria-label="por completar"></div></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="promocion2" onclick="voltearTarjeta(this)" class="prom tarjeta-interactiva" role="button" tabindex="0" aria-pressed="false" aria-label="Promoción 2. Pulsa para ver precio e información">
+      <div class="tarjeta-cuerpo">
+        <div class="cara-tarjeta cara-frontal">
+          <div class="imagen-pendiente" aria-hidden="true"></div>
+          <p class="textopro">Promoción 2</p>
+          </div>
+          <div class="cara-tarjeta cara-trasera">
+          <h2>Promoción 2</h2>
+          <p>Precio: <div id="precio2" class="campo-pendiente" aria-label="por completar"></div></p>
+          <p>Información: <div id="informacion2" class="campo-pendiente" aria-label="por completar"></div></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+<div id="barrabaja">
+  <p id="slogan">"CALIDAD A CADA BOCADO"</p>
+</div>
+
+<div id="bloqueinferior">
+
+    <img class="banner" src="../imagenes/baner2.png" alt="Banner">
+</div>
+
+</body>
+</html>

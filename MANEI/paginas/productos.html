@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Productos | Manei</title>
+<link rel="stylesheet" href="../archivos/estilo.css">
+<script defer src="../archivos/javascript.js"></script>
+
+</head>
+
+<body>
+
+<div id="bloquesuperior">
+
+      <img class="banner" src="../imagenes/banner.jpeg" alt="banner">
+
+    <div class="letras">
+<img src="../imagenes/logo.png" alt="logo">
+    </div>
+
+</div>
+ 
+<div id="menu">
+
+  <button onmouseover="colorBoton(this)" onmouseout="quitarColorBoton(this)" id ="binicio" onclick="enlace5()"> 
+  <img src="../imagenes/inicio.png" alt="icono de casa">
+  INICIO
+  </button>
+     
+  <button onmouseover="colorBoton(this)" onmouseout="quitarColorBoton(this)" id="bproductos" onclick ="enlace7()">
+  <img src="../imagenes/productos.png" alt="icono de productos">
+  PRODUCTOS
+  </button> 
+       
+  <button onmouseover="colorBoton(this)" onmouseout="quitarColorBoton(this)" id="bdiseñadores" onclick ="enlace9()" >
+  <img src="../imagenes/dise.png" alt="icono de diseñadores">
+  DISEÑADORES
+  </button>
+
+  <button onmouseover="colorBoton(this)" onmouseout="quitarColorBoton(this)" id="bcontacto"onclick ="enlace8()" 
+  ><img src="../imagenes/contacto.png" alt="icono de contacto">
+  UBICACION Y CONTACTO
+  </button>
+	
+</div>
+ 
+<div id="texto1">
+    <p>
+      Conoce nuestros productos.
+    </p> 
+
+</div>
+
+  <div class="galeria">
+
+    <div id="producto1" onclick="voltearTarjeta(this)" class="producto tarjeta-interactiva" role="button" tabindex="0" aria-pressed="false" aria-label="Colita. Pulsa para ver precio e información">
+      <div class="tarjeta-cuerpo">
+        <div class="cara-tarjeta cara-frontal">
+          <img src="../imagenes/cola.jpeg" alt="Colita">
+          <p class="textopro">Colita</p>
+        </div>
+
+        <div class="cara-tarjeta cara-trasera">
+          <h2>Colita</h2>
+          <p>Precio: $10.000<div id="precio1" class="campo-pendiente" aria-label="por completar"></div></p>
+          <p>Ingredientes:Pan,lechuga,tomate,guiso <div id="informacion1" class="campo-pendiente" aria-label="por completar"></div></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="producto2" onclick="voltearTarjeta(this)" class="producto tarjeta-interactiva" role="button" tabindex="0" aria-pressed="false" aria-label="Aplastado. Pulsa para ver precio e información">
+      <div class="tarjeta-cuerpo">
+        <div class="cara-tarjeta cara-frontal">
+          <img src="../imagenes/aplastado.jpeg" alt="Aplastado">
+          <p class="textopro">Aplastado</p>
+        </div>
+        
+        <div class="cara-tarjeta cara-trasera">
+          <h2>Aplastado</h2>
+          <p>Precio: $9.000 <div id="precio2" class="campo-pendiente" aria-label="por completar"></div></p>
+          <p>Ingredientes: Pan, lechunga,tomate, queso, pollo o carne, tomate. salsa <div id="informacion2" class="campo-pendiente" aria-label="por completar"></div></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="producto3" onclick="voltearTarjeta(this)" class="producto tarjeta-interactiva" role="button" tabindex="0" aria-pressed="false" aria-label="Salchipapa. Pulsa para ver precio e información">
+      <div class="tarjeta-cuerpo">
+        <div class="cara-tarjeta cara-frontal">
+          <img src="../imagenes/salchi.jpeg" alt="Salchipapa">
+          <p class="textopro">Salchipapa</p>
+        </div>
+        <div class="cara-tarjeta cara-trasera">
+          <h2>Salchipapa</h2>
+          <p>Precio: <div id="precio3" class="campo-pendiente" aria-label="por completar"></div></p>
+          <p>Información: <div id="informacion3" class="campo-pendiente" aria-label="por completar"></div></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="producto4" onclick="voltearTarjeta(this)" class="producto tarjeta-interactiva" role="button" tabindex="0" aria-pressed="false" aria-label="Aplastado. Pulsa para ver precio e información">
+      <div class="tarjeta-cuerpo">
+        <div class="cara-tarjeta cara-frontal">
+          <img src="../imagenes/perro.jpg" alt="Perro caliente">
+          <p class="textopro">Perro caliente</p>
+        </div>
+        
+        <div class="cara-tarjeta cara-trasera">
+          <h2>Perro caliente</h2>
+          <p>Precio: <div id="precio4" class="campo-pendiente" aria-label="por completar"></div></p>
+          <p>Información: <div id="informacion4" class="campo-pendiente" aria-label="por completar"></div></p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div id="producto5" onclick="voltearTarjeta(this)" class="producto tarjeta-interactiva" role="button" tabindex="0" aria-pressed="false" aria-label="Aplastado. Pulsa para ver precio e información">
+      <div class="tarjeta-cuerpo">
+        <div class="cara-tarjeta cara-frontal">
+          <img src="../imagenes/burger.jpg" alt="Hamburguesa">
+          <p class="textopro">Hamburguesa</p>
+        </div>
+        
+        <div class="cara-tarjeta cara-trasera">
+          <h2>Hamburguesa</h2>
+          <p>Precio: <div id="precio5" class="campo-pendiente" aria-label="por completar"></div></p>
+          <p>Información: <div id="informacion5" class="campo-pendiente" aria-label="por completar"></div></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+<div id="barrabaja">
+  <p id="slogan">"CALIDAD A CADA BOCADO"</p>
+</div>
+
+<div id="bloqueinferior">
+  
+    <img class="banner" src="../imagenes/baner2.png" alt="Banner">
+</div>
+
+</body>
+</html>
